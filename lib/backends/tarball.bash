@@ -81,7 +81,7 @@ function restore() {
   fi
 
   if [[ ! "${BK_TAR_FOUND}" =~ (false) ]]; then
-    tar ${BK_TAR_EXTRACT_ARGS} --posix "${TAR_FILE}" -C .
+    tar --posix ${BK_TAR_EXTRACT_ARGS} "${TAR_FILE}" -C .
   else
     cache_restore_skip "tar://${TAR_FILE}"
   fi
