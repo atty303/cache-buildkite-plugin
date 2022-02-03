@@ -3,7 +3,7 @@
 # Defaults...
 BK_CACHE_COMPRESS=${BUILDKITE_PLUGIN_CACHE_COMPRESS:-false}
 BK_TAR_ARGS=()
-BK_TAR_ADDITIONAL_ARGS=("--ignore-failed-read", "--posix")
+BK_TAR_ADDITIONAL_ARGS=("--ignore-failed-read" "--posix")
 BK_TAR_EXTENSION="tar"
 BK_TAR_EXTRACT_ARGS="-xf"
 BK_BASE_DIR="/tmp"
